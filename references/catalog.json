@@ -1,0 +1,1543 @@
+{
+  "schemaVersion": "1.0.0",
+  "version": "0.6.1",
+  "rulesetVersion": "0.2.0-cs-pilot.1",
+  "assessment": {
+    "mode": "EU_TARGET_2026_ONLY",
+    "targetDate": "2026-09-27"
+  },
+  "corpus": {
+    "cutoff": "2026-06-26",
+    "language": "cs",
+    "ruleCount": 80,
+    "rulebookFile": "RULEBOOK_CS.md",
+    "rulebookSha256": "e26bf151af04ee3319e27b0513219cfae494ca8dfdaf2ea738a5e00021c532b7"
+  },
+  "review": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewedAt": null,
+    "note": "Pilotní české vydání. Formální odborné schválení tohoto vydání není doloženo."
+  },
+  "sources": [
+    {
+      "sourceId": "S01",
+      "file": "sources/S01_UCPD_CS.pdf",
+      "originalFilename": "CELEX_32005L0029_CS_TXT.pdf",
+      "language": "cs",
+      "role": "Základní UCPD: rozsah, klamání, důkazy a příloha I.",
+      "sha256": "47fee3d3431049bc2213f362047286837b80ad5a748395a64cc3f62cfc4e5e18"
+    },
+    {
+      "sourceId": "S02",
+      "file": "sources/S02_CRD_EN.pdf",
+      "originalFilename": "CELEX_32011L0083_EN_TXT.pdf",
+      "language": "en",
+      "role": "Výchozí směrnice o právech spotřebitelů a předsmluvní informace.",
+      "sha256": "1994c40eb4a15b259a503b0b9d693f5c23225e4268a6c0dfc90cbea0a277813c"
+    },
+    {
+      "sourceId": "S03",
+      "file": "sources/S03_pokyny_UCPD_CS.pdf",
+      "originalFilename": "OJ_C_2021_526_FULL_CS_TXT.pdf",
+      "language": "cs",
+      "role": "Nezávazné pokyny Komise k UCPD z roku 2021.",
+      "sha256": "81f123629da0658eae17742caff7eccbc47d655f274dd276d24e8bbe6fd77c19"
+    },
+    {
+      "sourceId": "S04",
+      "file": "sources/S04_FAQ_EmpCo_EN.pdf",
+      "originalFilename": "ECGT Directive FAQ_update with CPC Common Understanding (1).pdf",
+      "language": "en",
+      "role": "FAQ útvarů Komise z června 2026, Q1–Q21; předběžný nezávazný výklad.",
+      "sha256": "65640011b26d6185ea86642386436256eeb9887ca9b6750eea9c1c1a2a85f9fb"
+    },
+    {
+      "sourceId": "S05",
+      "file": "sources/S05_GARAN_narizeni_CS.pdf",
+      "originalFilename": "OJ_L_202501960_CS_TXT.pdf",
+      "language": "cs",
+      "role": "Nařízení (EU) 2025/1960: závazná forma oznámení a GARAN od 27. 9. 2026.",
+      "sha256": "2d252926e88bf2631c67e8468f63fb936fcbd492787828e6095cb2b190173a00"
+    },
+    {
+      "sourceId": "S06",
+      "file": "sources/S06_GARAN_pokyny_EN.pdf",
+      "originalFilename": "Practical guidelines Harmonised Label&Notice product guarantees_ARES 27042026.pdf",
+      "language": "en",
+      "role": "Praktické pokyny z dubna 2026; nezávazné podrobnosti zobrazení.",
+      "sha256": "a3780399d4004a615e423f520f379fc3956fdbae9ca2c8c7455b5e1fe1585d1e"
+    },
+    {
+      "sourceId": "S07",
+      "file": "sources/S07_CPC_zasoby_EN.pdf",
+      "originalFilename": "Final CPC common understanding on old stock situations June 2026.pdf",
+      "language": "en",
+      "role": "Nezávazný přístup CPC k vymáhání u dřívějších zásob.",
+      "sha256": "30a9e81944fd1e374822066271fec4e22fe824a5afc9416a1ba865a734c4c4ce"
+    },
+    {
+      "sourceId": "S08",
+      "file": "sources/S08_tisk_53_0_CS.pdf",
+      "originalFilename": "t005300.pdf",
+      "language": "cs",
+      "role": "Český vládní návrh, důvodová zpráva a srovnávací podklady.",
+      "sha256": "8088ecbdf477d61f8152b6290b08f2fd92bc5cf6d177103d864b1d341e68bd14"
+    },
+    {
+      "sourceId": "S09",
+      "file": "sources/S09_tisk_53_3_CS.pdf",
+      "originalFilename": "t005303.pdf",
+      "language": "cs",
+      "role": "Pozměňovací návrhy z 26. 6. 2026; přijetí není doloženo.",
+      "sha256": "4e7504aeda4c9343ec2f7152a5b3b34b91f644ee45c25f715394521c4cb93470"
+    },
+    {
+      "sourceId": "S10",
+      "file": "sources/S10_konsolidovany_navrh_CS.docx",
+      "originalFilename": "pz_ALBSDNKA8AVW.docx",
+      "language": "cs",
+      "role": "Projektové konsolidované znění českých zákonů; nikoli konečný přijatý zákon.",
+      "sha256": "1e308205c262bf598c347544b7bad1967a1c288f0617c1f7a8a690064731eb2d"
+    }
+  ],
+  "rules": [
+    {
+      "ruleId": "SCP-01",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "SCP-02",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "SCP-03",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "SCP-04",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01"
+      ]
+    },
+    {
+      "ruleId": "SCP-05",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "SCP-06",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "ruleId": "SCP-07",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "SCP-08",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "DET-01",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-02",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "EU_TARGET_2026"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "DET-03",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "EU_TARGET_2026"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "DET-04",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-05",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-06",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-07",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-08",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-09",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "EU_TARGET_2026"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S03",
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "DET-10",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-01",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-02",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-03",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-04",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-05",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S03",
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-06",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08",
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "BL-07",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-08",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-09",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-10",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-11",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BL-12",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "BASE-01",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "PROHIBITED",
+        "CONDITIONAL"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "PROHIBITED": "HIGH"
+      },
+      "sourceIds": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "CTX-01",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CTX-02",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "CTX-03",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "CTX-04",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "CTX-05",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "CTX-06",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "CTX-07",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "ruleId": "CTX-08",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CTX-09",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CTX-10",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "EU_TARGET_2026"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CTX-11",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "CTX-12",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CTX-13",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE"
+      ],
+      "permittedVerdicts": [
+        "CONTEXTUAL_RISK",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "CONTEXTUAL_RISK": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S01",
+        "S10"
+      ]
+    },
+    {
+      "ruleId": "EVD-01",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-02",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-03",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-04",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-05",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-06",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-07",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "EVD-08",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "OPERATIONAL_INTERPRETATION",
+      "legalStatuses": [
+        "OPERATIONAL_INTERPRETATION"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S01",
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "MED-01",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "MED-02",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "MED-03",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "MED-04",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "CERT-01",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CERT-02",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CERT-03",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CERT-04",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CERT-05",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "CERT-06",
+      "recordKind": "TEMPORAL",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "REEP-01",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "REEP-02",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "REEP-03",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "REEP-04",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "REEP-05",
+      "recordKind": "ROUTING",
+      "primaryLegalStatus": "CURRENT_BASELINE",
+      "legalStatuses": [
+        "CURRENT_BASELINE",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-01",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "DIRECT_EU_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53",
+        "DIRECT_EU_2026"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S05",
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-02",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "DIRECT_EU_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53",
+        "DIRECT_EU_2026"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S05",
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-03",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "DIRECT_EU_2026",
+      "legalStatuses": [
+        "DIRECT_EU_2026"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "ruleId": "INF-04",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S06",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-05",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-06",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-07",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S04",
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-08",
+      "recordKind": "OPERATIVE",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "CZ_DRAFT_53"
+      ],
+      "permittedVerdicts": [
+        "INFORMATION_DUTY_FAILURE",
+        "CONDITIONAL",
+        "NO_MATERIAL_RISK_IDENTIFIED"
+      ],
+      "riskMapping": {
+        "CONDITIONAL": "MEDIUM",
+        "INFORMATION_DUTY_FAILURE": "HIGH",
+        "NO_MATERIAL_RISK_IDENTIFIED": "LOW"
+      },
+      "sourceIds": [
+        "S08"
+      ]
+    },
+    {
+      "ruleId": "INF-09",
+      "recordKind": "SUPPORT",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04"
+      ]
+    },
+    {
+      "ruleId": "TRANS-01",
+      "recordKind": "TEMPORAL",
+      "primaryLegalStatus": "EU_TARGET_2026",
+      "legalStatuses": [
+        "EU_TARGET_2026",
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S07",
+        "S09"
+      ]
+    },
+    {
+      "ruleId": "TRANS-02",
+      "recordKind": "TEMPORAL",
+      "primaryLegalStatus": "CZ_DRAFT_53",
+      "legalStatuses": [
+        "CZ_DRAFT_53",
+        "CZ_OLD_STOCK_OR_EFFECTIVE_DATE_UNCERTAIN"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S07",
+        "S09"
+      ]
+    },
+    {
+      "ruleId": "TRANS-03",
+      "recordKind": "TEMPORAL",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S07",
+        "S09"
+      ]
+    },
+    {
+      "ruleId": "TRANS-04",
+      "recordKind": "TEMPORAL",
+      "primaryLegalStatus": "GUIDANCE",
+      "legalStatuses": [
+        "GUIDANCE"
+      ],
+      "permittedVerdicts": [],
+      "riskMapping": {},
+      "sourceIds": [
+        "S04",
+        "S07",
+        "S09"
+      ]
+    }
+  ]
+}

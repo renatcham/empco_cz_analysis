@@ -1,0 +1,6 @@
+interface:
+  display_name: "EmpCo — analýza komunikace"
+  short_description: "EmpCo: pouze cílový režim od 27. září 2026"
+  default_prompt: "Použij $empco-cz-analysis k posouzení dodaného materiálu pouze pro cílový režim EmpCo od 27. září 2026 podle přibaleného rulebooku. Výstup česky: zjištění, rizika, důvody a rozhodné nejistoty bez doporučení k nápravě a externí právní rešerše."
+policy:
+  allow_implicit_invocation: false
