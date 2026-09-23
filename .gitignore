@@ -1,0 +1,12 @@
+# Výstupy analýz a místní pracovní soubory nepatří do distribuce.
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+tmp/
+output/
+cases/
+*.log
+*.zip
+.env
+.env.*
